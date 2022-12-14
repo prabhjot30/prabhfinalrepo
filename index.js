@@ -39,6 +39,7 @@ app.use(
     methods: ["POST", "GET",]
   })
 );
+app.use(express.static(__dirname))
 app.get("/", homecontroller.index);
 app.get("/home", homecontroller.index);
 app.get("/bookslist", homecontroller.index);
