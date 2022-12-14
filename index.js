@@ -40,7 +40,8 @@ app.use(
   })
 );
 app.get("/", homecontroller.index);
-app.get("/books", homecontroller.index);
+app.get("/home", homecontroller.index);
+app.get("/bookslist", homecontroller.index);
 app.get("/admin", homecontroller.prabhindex)
 app.get("/addnewbook", homecontroller.new);
 app.post("/books/create", homecontroller.create, homecontroller.redirectView);
