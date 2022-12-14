@@ -39,6 +39,7 @@ app.use(
     methods: ["POST", "GET",]
   })
 );
+app.get("/", homecontroller.index);
 app.get("/books", homecontroller.index);
 app.get("/admin", homecontroller.prabhindex)
 app.get("/addnewbook", homecontroller.new);
