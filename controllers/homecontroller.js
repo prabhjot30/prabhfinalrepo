@@ -42,8 +42,10 @@ module.exports = {
     },
     create: (req, res, next) => {
       let bookParams = {
-        Name: req.body.Name,
-        AuthorName: req.body.AuthorName
+        id: req.body.id,
+        name: req.body.name,
+        authorName: req.body.authorName,
+        
       };
       Book.create(bookParams)
         .then(books => {
