@@ -1,0 +1,18 @@
+<html>
+    <%- include('design/navigation')%>
+    <body style="background-color:darkseagreen">
+            <div class="information">
+            <h1>
+                Books List
+            </h1>
+            <%books.forEach(element => { %>
+                <a href=<%= `/books/${element._id}` %> ">
+                    <img src=<%= element.bookImage %>
+                    style="width:200px;height:300px;">
+                    <%= element.name %></a><br>  <%  
+                
+            }); %> 
+            </div>
+    </body>
+</html>
+
