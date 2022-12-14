@@ -30,7 +30,7 @@ app.set('view engine','ejs');
 app.set("port", process.env.PORT)
 
 app.get("/books",homecontroller.index)
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(`Local Host 3000`);
   
 });
